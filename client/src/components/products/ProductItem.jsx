@@ -26,7 +26,7 @@ const ProductItem = ({ item }) => {
           />
           <div className="product-info flex flex-col p-3">
             <span>{item.title}</span>
-            <span>{item.price} $</span>
+            <span>{item.price} ₺</span>
           </div>
         </div>
       </div>

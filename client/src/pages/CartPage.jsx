@@ -160,7 +160,7 @@ const CartPage = () => {
       dataIndex: "price",
       key: "price",
       render:(text)=>{
-          return (<span>{text.toFixed(2)} $</span>)
+          return (<span>{text.toFixed(2)} ₺</span>)
       },
       sorter: (a,b)=> a.price - b.price
     },
@@ -195,7 +195,7 @@ const CartPage = () => {
       dataIndex: "total",
       key: "total",
       render:(text,record)=>{
-        return(<span>{record.quantity*record.price.toFixed(2)} $</span>)
+        return(<span>{record.quantity*record.price.toFixed(2)} ₺</span>)
       }
       
     },
@@ -233,17 +233,17 @@ const CartPage = () => {
           <Card className="w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>
-              <span>{cart.total.toFixed(2)}$</span>
+              <span>{cart.total.toFixed(2)}₺</span>
             </div>
             <div className="flex justify-between my-2">
               <span>KDV % {cart.tax}</span>
               <span className="text-red-700">{(cart.total / 100) * cart.tax > 0
                 ? ((cart.total / 100) * cart.tax).toFixed(2)
-                : 0}£</span>
+                : 0}₺</span>
             </div>
             <div className="flex justify-between ">
               <b>Toplam</b>
-              <b>{(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}$</b>
+              <b>{(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}₺</b>
             </div>
             <div className="flex justify-center">
               <Button

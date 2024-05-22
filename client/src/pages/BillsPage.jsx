@@ -179,7 +179,7 @@ const BillsPage = () => {
       dataIndex: "totalAmount",
       key: "totalAmount",
       render: (text) => {
-        return <span>{text.toFixed(2)} £</span>;
+        return <span>{text.toFixed(2)} ₺</span>;
       },
       sorter: (a,b)=> a.totalAmount - b.totalAmount
     },

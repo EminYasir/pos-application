@@ -43,7 +43,7 @@ const CartTotal = () => {
                   <div className="flex flex-col ml-2">
                     <b>{item.title}</b>
                     <span>
-                      {item.price}$ X {item.quantity}
+                      {item.price}₺ X {item.quantity}
                     </span>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const CartTotal = () => {
         <div className="border-t border-b">
           <div className="flex justify-between p-2">
             <b>Ara Toplam</b>
-            <span>{cart.total.toFixed(2)}£</span>
+            <span>{cart.total.toFixed(2)}₺</span>
           </div>
           <div className="flex justify-between  p-2">
             <b>KDV %{cart.tax}</b>
@@ -88,7 +88,7 @@ const CartTotal = () => {
               {(cart.total / 100) * cart.tax > 0
                 ? ((cart.total / 100) * cart.tax).toFixed(2)
                 : 0}
-              £
+              ₺
             </span>
           </div>
         </div>
@@ -96,7 +96,7 @@ const CartTotal = () => {
           <div className="flex justify-between p-2">
             <b className="text-xl text-green-500">Genel Toplam</b>
             <span className="text-xl">
-              {(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}£
+              {(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}₺
             </span>
           </div>
         </div>

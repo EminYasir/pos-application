@@ -88,13 +88,13 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                   {(cart.total / 100) * cart.tax > 0
                     ? ((cart.total / 100) * cart.tax).toFixed(2)
                     : 0}
-                  $
+                  ₺
                 </span>
               </div>
               <div className="flex justify-between ">
                 <b>Toplam</b>
                 <b>
-                  {(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}$
+                  {(cart.total + (cart.total / 100) * cart.tax).toFixed(2)}₺
                 </b>
               </div>
               <div className="flex justify-end">
