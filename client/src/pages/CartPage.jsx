@@ -219,17 +219,18 @@ const CartPage = () => {
   return (
     <>
       <Headerr />
-      <div className="px-6">
+      <div className=" md:px-6  px-3  md:h-[calc(100vh_-_112px)] h-[calc(100vh_-_160px)] flex flex-col justify-between" >
         <Table
           dataSource={cart.cartItems}
           columns={columns}
           bordered
           pagination={false}
           scroll={{
-            x:1200,y:300
+            x:1200,y:500
           }}
+          key={"_id"}
         />
-        <div className="cart-total flex justify-end mt-4">
+        <div className="cart-total flex justify-end">
           <Card className="w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>
