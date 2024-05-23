@@ -10,3 +10,4 @@
 ![Screenshot_8](https://github.com/EminYasir/pos-application/assets/85822420/af640804-35b3-472f-acb2-7726402cd018)
 ![Screenshot_9](https://github.com/EminYasir/pos-application/assets/85822420/9f4d9d6d-3352-4632-89cb-2b32668f5b87)
 ![Screenshot_10](https://github.com/EminYasir/pos-application/assets/85822420/ec4ec67a-c8ba-4917-8144-d3ea42938895)
+.
