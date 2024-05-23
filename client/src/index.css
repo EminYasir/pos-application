@@ -12,9 +12,9 @@ body {
   @apply bg-gray-50
 }
 
-.categories::-webkit-scrollbar {
+/* .categories::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .menu-link{
   @apply flex flex-col hover:text-[#40a9ff]  transition-all items-center

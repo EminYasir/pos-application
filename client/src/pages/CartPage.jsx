@@ -231,7 +231,7 @@ const CartPage = () => {
           key={"_id"}
         />
         <div className="cart-total flex justify-end mb-1">
-          <Card className="w-72 ">
+          <Card className=" md:w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>
               <span>{cart.total.toFixed(2)}₺</span>

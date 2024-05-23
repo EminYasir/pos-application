@@ -110,18 +110,20 @@ const Headerr = ({ setSearch }) => {
           </div>
         </div>
         <Badge
-          count={cart.cartItems.length}
-          offset={[0, 5]}
-          className="md:hidden flex"
-        >
-          <a
-            href={"/card"}
-            className="menu-link ${}"
+            count={cart.cartItems.length}
+            offset={[0, 5]}
+            className="md:hidden flex"
           >
-            <ShoppingCartOutlined className="text-2xl " />
-            <span className="md:text-xs text-[10px]">Sepet</span>
-          </a>
-        </Badge>
+            <Link
+              to={"/card"}
+              className={`menu-link ${
+                pathname ==="/card" && "active"
+              }`}
+            >
+              <ShoppingCartOutlined className="md:text-2xl text-xl" />
+              <span className="md:text-xs text-[10px]">Sepet</span>
+            </Link>
+          </Badge>
       </header>
     </div>
   );
