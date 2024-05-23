@@ -226,11 +226,11 @@ const CartPage = () => {
           bordered
           pagination={false}
           scroll={{
-            x:1200,y:500
+            x:1200,y:300
           }}
           key={"_id"}
         />
-        <div className="cart-total flex justify-end">
+        <div className="cart-total flex justify-end mb-1">
           <Card className="w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>

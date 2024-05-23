@@ -67,7 +67,7 @@ const StatisticPage = () => {
             Hoş geldin{" "}
             <span className="text-green-700 font-bold text-xl">{user.username}</span>
           </h2>
-          <div className="statistic-cards grid xl:grid-cols-4 md:grid-cols-2 my-10 md:gap-10 gap-4">
+          <div className="statistic-cards grid xl:grid-cols-4 md:grid-cols-2 my-10 md:gap-10 gap-4 ">
             <StatisticCard
               title={"Toplam Müşteri"}
               amount={data?.length}
@@ -89,7 +89,7 @@ const StatisticPage = () => {
               img={"images/product.png"}
             />
           </div>
-          <div className="flex justify-between gap-10 lg:flex-row flex-col items-center">
+          <div className="md:flex hidden justify-between gap-10 lg:flex-row flex-col items-center ml-10  ">
             <div className="lg:w-1/2 lg:h-full h-72">
               <Area {...config} />
             </div>
