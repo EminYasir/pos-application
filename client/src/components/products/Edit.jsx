@@ -42,7 +42,7 @@ const Edit = () => {
   }, [editingItem, form]);
   const onFinish = (values) => {
     try {
-      fetch(process.env.REACT_APP_SERVER_URL +"/products/update-product", {
+      fetch(process.env.REACT_APP_SERVER_URL +"/api/products/update-product", {
         method: "PUT",
         body: JSON.stringify({ ...values, productId: editingItem._id }),
         headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -66,7 +66,7 @@ const Edit = () => {
   const deleteCategory = (id) => {
     if (window.confirm("Emin misiniz?")) {
       try {
-        fetch(process.env.REACT_APP_SERVER_URL +"/products/delete-product", {
+        fetch(process.env.REACT_APP_SERVER_URL +"/api/products/delete-product", {
           method: "DELETE",
           body: JSON.stringify({ productId: id }),
           headers: { "Content-type": "application/json; charset=UTF-8" },
