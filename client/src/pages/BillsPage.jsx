@@ -208,7 +208,7 @@ const BillsPage = () => {
     <>
       <Headerr />
       <h1 className="text-4xl font-bold text-center mb-3">Faturalar</h1>
-      {billItems ? (<div className="px-6 flex flex-col min-h-[550px]">
+      {billItems ? (<div className="px-6 flex flex-col md:h-[calc(100vh_-_150px)] h-[calc(100vh_-_80px)]">
         
         <Table dataSource={billItems} columns={columns} bordered pagination={false}
         scroll={{
