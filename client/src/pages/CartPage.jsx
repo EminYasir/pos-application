@@ -219,7 +219,7 @@ const CartPage = () => {
   return (
     <>
       <Headerr />
-      <div className=" md:px-6  px-3  md:h-[calc(100vh_-_112px)] h-[calc(100vh_-_160px)] flex flex-col justify-between" >
+      <div className=" md:px-6  px-3  md:h-[calc(100vh_-_150px)] h-[calc(100vh_-_160px)] flex flex-col justify-between md:mb-15" >
         <Table
           dataSource={cart.cartItems}
           columns={columns}
