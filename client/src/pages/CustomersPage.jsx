@@ -179,7 +179,7 @@ const CustomersPage = () => {
         
         <Table dataSource={billItems} columns={columns} bordered pagination={false}
         scroll={{
-          x:1000,y:500
+          x:1000,y:400
         }} 
         rowKey="_id"/>
       </div>) : (<Spin size="large" className="absolute h-screen top-1/3 left-1/2 "/>)}
