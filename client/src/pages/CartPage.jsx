@@ -219,7 +219,7 @@ const CartPage = () => {
   return (
     <>
       <Headerr />
-      <div className=" md:px-6  px-3  md:h-[calc(100vh_-_150px)] h-[calc(100vh_-_160px)] flex flex-col justify-between " >
+      <div className=" md:px-6  px-3  md:h-[calc(100vh_-_150px)] h-[calc(100vh_-_112px)] flex flex-col justify-between  md:0 pb-14" >
         <Table
           dataSource={cart.cartItems}
           columns={columns}
@@ -230,7 +230,7 @@ const CartPage = () => {
           }}
           key={"_id"}
         />
-        <div className="cart-total flex justify-end mt-5 md:mb-35 mb-5">
+        <div className="cart-total flex justify-end mt-5 ">
           <Card className=" md:w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>
