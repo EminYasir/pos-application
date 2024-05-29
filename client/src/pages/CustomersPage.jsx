@@ -175,7 +175,7 @@ const CustomersPage = () => {
     <>
       <Headerr />
       <h1 className="text-4xl font-bold text-center mb-3">Müşteriler</h1>
-      {billItems ? (<div className="px-6 flex flex-col">
+      {billItems ? (<div className="px-6 flex flex-col min-h-[550px]">
         
         <Table dataSource={billItems} columns={columns} bordered pagination={false}
         scroll={{
