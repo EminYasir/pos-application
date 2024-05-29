@@ -230,7 +230,7 @@ const CartPage = () => {
           }}
           key={"_id"}
         />
-        <div className="cart-total flex justify-end mb-1">
+        <div className="cart-total flex justify-end mt-5 mb-5">
           <Card className=" md:w-72 ">
             <div className="flex justify-between">
               <span>Ara Toplam</span>
